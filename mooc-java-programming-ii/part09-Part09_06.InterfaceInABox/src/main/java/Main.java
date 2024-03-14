@@ -2,7 +2,16 @@
 public class Main {
 
     public static void main(String[] args) {
-        // test your classes here
+
+        Box bigBox = new Box(20);
+        Box box = new Box(10);
+        bigBox.add(box);
+        box.add( new Book("Horstman", "Core Java",5) );
+        double weight = bigBox.weight();
+
+        System.out.println(weight);
+
+        }
     }
 
-}
+

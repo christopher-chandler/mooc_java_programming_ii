@@ -20,7 +20,5 @@ public class Main {
         return names.size();
     }
 
-    // implement the method returnSize here, which returns
-    // the number of elements in the set that it receives as a parameter.
 
 }

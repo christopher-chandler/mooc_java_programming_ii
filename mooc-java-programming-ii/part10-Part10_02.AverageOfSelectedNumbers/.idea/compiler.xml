@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Part08_15.StorageFacility" />
-        <module name="part08-Part08_15.StorageFacility" />
+        <module name="Part10_02.AverageOfSelectedNumbers" />
       </profile>
     </annotationProcessing>
   </component>

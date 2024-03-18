@@ -8,9 +8,23 @@ import java.util.stream.Collectors;
 
 public class ReadingFilesPerLine {
 
-    public static void main(String[] args) {
+    public static List<String> read(String file){
+
         Scanner scanner = new Scanner(System.in);
-        // test the method here
+        List<String> rows = new ArrayList<>();
+
+        try {
+            Files.lines(Paths.get(file)).forEach(row -> rows.add(row));
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        System.out.println(rows);
+        return rows;
+    }
+
+    public static void main(String[] args) {
+
+
 
     }
 

@@ -22,4 +22,8 @@ public class Item {
     public String toString() {
         return this.name + ": (" + this.weight + " kg)";
     }
+
+    public int getweight() {
+        return 0;
+    }
 }

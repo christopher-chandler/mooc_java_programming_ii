@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Part08_02.AverageOfPositiveNumbers" />
+        <module name="Part11_04.StudentAndUniversity" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Part11_04.StudentAndUniversity" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

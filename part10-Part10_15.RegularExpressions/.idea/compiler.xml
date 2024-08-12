@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Part10_14.Literature" />
+        <module name="Part10_15.RegularExpressions" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Part10_15.RegularExpressions" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

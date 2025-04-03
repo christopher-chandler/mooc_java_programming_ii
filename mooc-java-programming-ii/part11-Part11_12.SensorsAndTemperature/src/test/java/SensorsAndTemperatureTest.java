@@ -1,4 +1,5 @@
 
+import application.Sensor;
 import fi.helsinki.cs.tmc.edutestutils.Points;
 import fi.helsinki.cs.tmc.edutestutils.ReflectionUtils;
 import fi.helsinki.cs.tmc.edutestutils.Reflex;
@@ -8,7 +9,6 @@ import java.util.Set;
 import java.util.TreeSet;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import application.Sensor;
 
 public class SensorsAndTemperatureTest<_Sensor> {
 
@@ -39,7 +39,7 @@ public class SensorsAndTemperatureTest<_Sensor> {
         Reflex.MethodRef1<Object, Object, Integer> ctor = classRef.constructor().taking(int.class).withNiceError();
         assertTrue("Please define the class " + s(klassName) + " a public constructor: \n"
                 + "public " + s(klassName) + "(int arvo)", ctor.isPublic());
-        String v = "the error was caused by the code: new StandardSensor(10);\n";
+        String v = "the error was caused by the code: new application.main.StandardSensor(10);\n";
         ctor.withNiceError(v).invoke(10);
     }
 
@@ -66,7 +66,7 @@ public class SensorsAndTemperatureTest<_Sensor> {
         }
 
         if (!implementsInteface) {
-            fail("Please ensure that the class StandardSensor implements the interface Sensor.");
+            fail("Please ensure that the class application.main.StandardSensor implements the interface application.Sensor.");
         }
     }
 
@@ -80,48 +80,48 @@ public class SensorsAndTemperatureTest<_Sensor> {
         Sensor vs55 = newStandardSensor(55);
 
         String k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.read();\n";
 
         String k2 = ""
-                + "StandardSensor s = new StandardSensor(55);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(55);\n"
                 + "s.read();\n";
 
         assertEquals(k1, 10, (int) classRef.method(vs10, "read").returning(int.class).takingNoParams().withNiceError(k1).invoke());
         assertEquals(k2, 55, (int) classRef.method(vs55, "read").returning(int.class).takingNoParams().withNiceError(k2).invoke());
 
         k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.isOn();\n";
 
         k2 = ""
-                + "StandardSensor s = new StandardSensor(55);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(55);\n"
                 + "s.isOn();\n";
 
         assertEquals(k1, true, (boolean) classRef.method(vs10, "isOn").returning(boolean.class).takingNoParams().withNiceError(k1).invoke());
         assertEquals(k2, true, (boolean) classRef.method(vs55, "isOn").returning(boolean.class).takingNoParams().withNiceError(k1).invoke());
 
         k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.setOff();\n";
 
         classRef.method(vs10, "setOff").returningVoid().takingNoParams().withNiceError(k1).invoke();
 
         k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.setOff();\n"
                 + "s.isOn();\n";
 
         assertEquals(k1, true, (boolean) classRef.method(vs10, "isOn").returning(boolean.class).takingNoParams().withNiceError(k1).invoke());
 
         k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.setOn();\n";
 
         classRef.method(vs10, "setOn").returningVoid().takingNoParams().withNiceError(k1).invoke();
 
         k1 = ""
-                + "StandardSensor s = new StandardSensor(10);\n"
+                + "application.main.StandardSensor s = new application.main.StandardSensor(10);\n"
                 + "s.setOn();\n"
                 + "s.isOn();\n";
 
@@ -314,7 +314,7 @@ public class SensorsAndTemperatureTest<_Sensor> {
         }
 
         if (!implementsInteface) {
-            fail("Please ensure that the class AverageSensor implements the interface Sensor.");
+            fail("Please ensure that the class AverageSensor implements the interface application.Sensor.");
         }
     }
 
@@ -340,7 +340,7 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         Sensor ka = newAverageSensor();
 
-        assertTrue("Please add the method 'addSensor(Sensor toAdd)' in the class AverageSensor.", classRef.method(ka, "addSensor").returningVoid().taking(Sensor.class).isPublic());
+        assertTrue("Please add the method 'addSensor(application.Sensor toAdd)' in the class AverageSensor.", classRef.method(ka, "addSensor").returningVoid().taking(Sensor.class).isPublic());
 
         classRef.method(ka, "addSensor").returningVoid().taking(Sensor.class).withNiceError(k1).invoke(sensor1);
     }
@@ -355,7 +355,7 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         String code = "The error was caused by the code\n"
                 + "AverageSensor ka = new AverageSensor();\n"
-                + "ka.addSensor( new StandardSensor(4) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(4) );\n"
                 + "ka.read();\n";
 
         Sensor ka = newAverageSensor();
@@ -368,9 +368,9 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         code = "The error was caused by the code\n"
                 + "AverageSensor ka = new AverageSensor();\n"
-                + "ka.addSensor( new StandardSensor(4) );\n"
-                + "ka.addSensor( new StandardSensor(5) );\n"
-                + "ka.addSensor( new StandardSensor(9) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(4) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(5) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(9) );\n"
                 + "ka.read();\n";
 
         classRef.method(ka, "addSensor").returningVoid().taking(Sensor.class).withNiceError(code).invoke(newStandardSensor(5));
@@ -563,8 +563,8 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         String code = ""
                 + "AverageSensor ka = new AverageSensor();\n"
-                + "ka.addSensor( new StandardSensor(3) );\n"
-                + "ka.addSensor( new StandardSensor(7) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(3) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(7) );\n"
                 + "ka.readings();\n";
 
         Sensor ka = newAverageSensor();
@@ -580,8 +580,8 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         code = ""
                 + "AverageSensor ka = new AverageSensor();\n"
-                + "ka.addSensor( new StandardSensor(3) );\n"
-                + "ka.addSensor( new StandardSensor(7) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(3) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(7) );\n"
                 + "ka.read();\n"
                 + "ka.readings();\n";
         assertTrue("Returned null with the code: \n" + code, classRef.method(ka, "readings").returning(List.class).takingNoParams().withNiceError(code).invoke() != null);
@@ -594,8 +594,8 @@ public class SensorsAndTemperatureTest<_Sensor> {
 
         code = ""
                 + "AverageSensor ka = new AverageSensor();\n"
-                + "ka.addSensor( new StandardSensor(3) );\n"
-                + "ka.addSensor( new StandardSensor(7) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(3) );\n"
+                + "ka.addSensor( new application.main.StandardSensor(7) );\n"
                 + "ka.read();\n"
                 + "ka.read();\n"
                 + "ka.read();\n"

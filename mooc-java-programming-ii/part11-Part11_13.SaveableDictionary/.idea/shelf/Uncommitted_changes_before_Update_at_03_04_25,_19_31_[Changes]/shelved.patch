@@ -1,0 +1,63 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"33306a6a-21d0-4d34-8263-d5183ce97054\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/dictionary/SaveableDictionary.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../part11-Part11_12.SensorsAndTemperature/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../part11-Part11_12.SensorsAndTemperature/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/dictionary/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/dictionary/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/words.txt\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2vDDOBHV7wLsjmCA4pw2bppk3Xk\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/target\" />\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"JUnit.SaveableDictionaryTest\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"dictionary.Main\" />\n      <module name=\"Part11_13.SaveableDictionary\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"dictionary.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"program\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"program\" />\n      <module name=\"Part11_13.SaveableDictionary\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"SaveableDictionaryTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Part11_13.SaveableDictionary\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"dictionary.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"dictionary\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"dictionary.SaveableDictionaryTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"JUnit.SaveableDictionaryTest\" />\n        <item itemvalue=\"Application.Main\" />\n        <item itemvalue=\"Application.program\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"33306a6a-21d0-4d34-8263-d5183ce97054\" name=\"Changes\" comment=\"\" />\n      <created>1743670719175</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1743670719175</updated>\n      <workItem from=\"1743670722469\" duration=\"32000\" />\n      <workItem from=\"1743679968942\" duration=\"14967000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3461a950fc752e6f38746676f8ed5ea09dae8244)
++++ b/.idea/workspace.xml	(date 1743701465808)
+@@ -4,11 +4,22 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="33306a6a-21d0-4d34-8263-d5183ce97054" name="Changes" comment="">
++    <list default="true" id="33306a6a-21d0-4d34-8263-d5183ce97054" name="Changes" comment="Finish 11_4_2">
++      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/SaveableDictionary.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/target/classes/dictionary/Main.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/target/classes/dictionary/SaveableDictionary.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/target/test-classes/dictionary/SaveableDictionaryTest.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/word.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/../part11-Part11_12.SensorsAndTemperature/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../part11-Part11_12.SensorsAndTemperature/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/word.txt" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -109,8 +120,16 @@
+       <option name="presentableId" value="Default" />
+       <updated>1743670719175</updated>
+       <workItem from="1743670722469" duration="32000" />
+-      <workItem from="1743679968942" duration="14967000" />
++      <workItem from="1743679968942" duration="15285000" />
++    </task>
++    <task id="LOCAL-00001" summary="Finish 11_4_2">
++      <created>1743701449563</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1743701449563</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -127,4 +146,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Finish 11_4_2" />
++    <option name="LAST_COMMIT_MESSAGE" value="Finish 11_4_2" />
++  </component>
+ </project>
+\ No newline at end of file

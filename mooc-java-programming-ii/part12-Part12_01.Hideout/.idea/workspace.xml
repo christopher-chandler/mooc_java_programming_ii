@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1731d1-6750-44fb-8656-e246e7d7f55d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hideout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../part11-Part11_13.SaveableDictionary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../part11-Part11_13.SaveableDictionary/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c1731d1-6750-44fb-8656-e246e7d7f55d" name="Changes" comment="Finish 12_1_2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,8 +70,16 @@
       <option name="presentableId" value="Default" />
       <updated>1743701499614</updated>
       <workItem from="1743701504740" duration="598000" />
-      <workItem from="1744028912910" duration="1701000" />
+      <workItem from="1744028912910" duration="2165000" />
     </task>
+    <task id="LOCAL-00001" summary="Finish 12_1_2">
+      <created>1744031786964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744031786964</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +95,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish 12_1_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish 12_1_2" />
   </component>
 </project>
